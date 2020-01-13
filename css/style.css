@@ -7,7 +7,7 @@
 	License: GNU General Public License version 3.0
 	License URI: http://www.gnu.org/licenses/gpl-3.0.html
 	Version: 1.0
-	
+
 	1.  CSS Reset
 	2.	Document Setup
 	3.	Header Part
@@ -22,8 +22,8 @@
 	11. Get in tuch Style
 	12. Footer Style
 	13. Responsive style
-		
-		
+
+
 ---------------------------------------------------------------------------------
 /* 1. CSS Reset
 -------------------------------------------------------------------------------*/
@@ -121,7 +121,7 @@ h5 {
 h4.subHeading {
 	font-weight:300;
 	font-size:18px;
-	
+
 	padding-bottom:20px;
 }
 .heading {
@@ -159,7 +159,7 @@ header {
 	/*background: rgba(0, 0, 0, 0.3);
  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#b2000000, endColorstr=#b2000000);
 	zoom: 1;*/
-	
+
 	position:relative ;
 	left:0;
 	right:0;
@@ -168,7 +168,7 @@ header {
 	padding:30px 0 30px ;
 	max-width:960px;
 	z-index:999999 ;
-	
+
 	animation-name: textBox;
 	animation-duration: 5s;
 	animation-timing-function: linear;
@@ -213,7 +213,7 @@ header {
 }
 /*------------------------------------
 	3.1 Slide show background control
---------------------------------------*/ 
+--------------------------------------*/
 .cb-slideshow {
 	background:#1b1f2b;
 }
@@ -377,7 +377,7 @@ header {
 	background-color:#4c404d;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
-	
+
 	}
 .navbar-brand{
 	margin-top:4px;
@@ -426,7 +426,7 @@ header {
 	padding-left:0;
 	}
 .navbar.navbar-inverse.navbar-static-top .nav li{
-	padding:0 0 0 36px;	
+	padding:0 0 0 36px;
 	}
 .navbar.navbar-inverse.navbar-static-top .nav li a{
 	padding:0;
@@ -501,7 +501,7 @@ header {
 	min-width:100%;
 	min-height:100% !important;
 	height:650px;
-	
+
 	/*width:auto;
 	height:auto;
 	display:block;*/
@@ -557,9 +557,9 @@ header {
 	padding-bottom:26px;
 }
 .aboutme .heading h2{
-	color:#5b4c5c;	
+	color:#5b4c5c;
 	display:inline-block;
-	
+
 	}
 .aboutme h3{
 	color:#5b4c5c;
@@ -593,7 +593,7 @@ header {
 }
 .technical p {
 	color:#897f8a;
-	
+
 }
 .technical h2 {
 	color:#5b4c5c;
@@ -713,7 +713,7 @@ header {
 
 .workYear {
 	font-size:17px;
-	color:#fff;		
+	color:#fff;
 	line-height:40px;
 }
 
@@ -729,6 +729,7 @@ header {
 	}
 .prevY{
 	background-color:#;
+	color:#483c49;
 	}
 .afterY{
 	background-color:#483c49;
@@ -758,7 +759,15 @@ header {
 }
 .exCon h5 {
 	color:#5b4c5c;
-	padding-bottom:11px;
+	padding-bottom:2px;
+}
+/* Adding custom list*/
+.exCon ul {
+	padding:0 47px 6px 40px;
+	text-align:left;
+}
+.exCon li {
+	color:#5b4c5c;
 }
 /*----------------------------------------------------
  9.	Education Style
@@ -799,7 +808,7 @@ header {
 	background:url(../images/arrow-left.png) no-repeat 0 0 #ffffff;
 }
 .education .exCon {
-	
+
 }
 .education .workDetails .rightArea {
 	border-left-color:#897f8a;
@@ -863,7 +872,7 @@ header {
 	-webkit-transition-duration: 0.2s;
 }
 .portfolioFilter ul li a:hover {
-	
+
 	color:#f3f2f3;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
@@ -937,7 +946,7 @@ span.hoverBox .zoom {
 	text-align:center;
 	line-height:64px;
 	display: block;
-	float: left;	
+	float: left;
 	border-radius:50%;
 	-moz-border-radius:50%;
 	transition-duration: 0.2s;
@@ -1131,7 +1140,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 .topCon {
 	padding-bottom:0px !important;
 }
-.mapArea {	
+.mapArea {
 	height:302px;
 	overflow:hidden;
 	width:100%;
@@ -1294,7 +1303,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	text-align:center;
 	}
 
-	
+
 /*---------------------------------------------------------------------------------
  13. Responsive style
 -------------------------------------------------------------------------------*/
