@@ -6,7 +6,7 @@
     "email": "diegoa@aguilera.me",
     "phone": "931-624-5808",
     "website": "http://aguilera.me",
-    "summary": "Diego Aguilera Resume",
+    "summary": "Diego Aguilera Resume - Need to add more about me here! Ugh Words.",
     "location": {
       "address": "1462 Elm St",
       "postalCode": "37415",
@@ -91,10 +91,10 @@
     },
     {
       "institution": "MISSILE AND MUNITIONS SCHOOL, Redstone Arsenal, AL",
-      "area": "Developed equipment proficiency in oscilloscopes, multi-meters, counters, frequency generators, spectrum analyzers, pressure, temperature, mass and torque indicating test equipment.",
-      "studyType": "",
+      "area": "Certificate",
+      "studyType": "Developed equipment proficiency in oscilloscopes, multi-meters, counters, frequency generators, spectrum analyzers, pressure, temperature, mass and torque indicating test equipment.",
       "startDate": "",
-      "endDate": "",
+      "endDate": "2004",
       "gpa": "",
       "courses": [
         "DB1101 - Basic SQL"
@@ -103,9 +103,9 @@
     {
       "institution": "PALM BEACH COMMUNITY COLLEGE, Boca Raton, FL",
       "area": "A.S., Arts",
-      "studyType": "",
+      "studyType": " ",
       "startDate": "",
-      "endDate": "",
+      "endDate": "2003-08",
       "gpa": "3.0",
       "courses": [
         "DB1101 - Basic SQL"
@@ -115,13 +115,15 @@
   "skills": [
     {
       "name": "Operating Systems",
-      "level": "Master",
+      "level": "80%",
+      "summary": "Have a great understanding of Linux, Windows, and OSX.",
       "keywords": [
         "Windows",
         "Linux",
         "OSX"
       ]
     },
+
     {
       "name": "Software",
       "level": "Master",

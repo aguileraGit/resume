@@ -12,3 +12,5 @@ To Do...
 10. Add Google Tracking
 
 https://jsonresume.org/projects/
+
+Contact form looked better before. 
