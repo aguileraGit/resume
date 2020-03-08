@@ -1,0 +1,147 @@
+{
+  "basics": {
+    "name": "Diego Aguilera",
+    "label": "Electrical Engineer",
+    "picture": "",
+    "email": "diegoa@aguilera.me",
+    "phone": "931-624-5808",
+    "website": "http://aguilera.me",
+    "summary": "Diego Aguilera Resume",
+    "location": {
+      "address": "1462 Elm St",
+      "postalCode": "37415",
+      "city": "Chattanooga",
+      "countryCode": "US",
+      "region": "TN"
+    },
+    "profiles": [
+      {
+        "network": "Github",
+        "username": "aguileraGit",
+        "url": "https://github.com/aguileraGit/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Mueller Company",
+      "position": "Electrical Engineer",
+      "website": "https://www.muellercompany.com",
+      "startDate": "2016-02-07",
+      "endDate": "Present",
+      "summary": "Electrical Engineer & Hardware/Software Developer. Hired to further develop sensor platform for remote pressure monitoring, Production software and product testing.",
+      "highlights": [
+        "Started the company"
+      ],
+      "actions": [
+        "Developed LTE based low power battery powered PCB with 5 year+ life.",
+        "Worked with vendors to create specifications for low power submersible pressure sensor.",
+        "Developed Linux based Production software to program devices, interrogate modems, print labels, and calibrate sensors. SSH for remote access for troubleshooting and updating.",
+        "Managed two different PCB manufacture/designers to develop Smart Hydrant PCBs. These included RF (Bluetooth, GPS, and LTE circuits).",
+        "Involved in early development of Smart Hydrant, production instructions, testing, and calibration. Currently working with plants and sourcing of electronics related parts.",
+        "Currently working on Automated Testing and Production Validation hardware to test products. Currently controlling/reading enviromental chamber (temperature/humidity), pressure regulator, calibrated pressure sensor, DUT UART, and high-speed pressure generation/acquisition. All devices are USB (FTDI) and maintained with udev rules. All points are captured to SQLite files and plotted using Bokeh library. Each test is developed/specified in Github and translated into Python code. Each test is run via JupyterLab notebook and analyzed using separate notebook."
+      ]
+    },
+    {
+      "company": "Variable Inc.",
+      "position": "Electrical Engineer & Hardware/Firmware Developer.",
+      "website": "https://www.variableinc.com",
+      "startDate": "2016-07",
+      "endDate": "2016-02",
+      "summary": "Started as an intern with the NODE wireless sensor platform manufacturer. After completing Engineering degree was hired on full-time. Worked on special projects and lead development of new sensor module technologies.",
+      "highlights": [
+        "Started the company"
+      ],
+      "actions": [
+        "Worked on sensor modules: CO2, Wi-Fi, High Speed Accelerometer, Airflow, Radiation, Photon (mini-spectrometer), Nanobeak (electrochemical), Chroma (currently sold on the market under Color Muse).",
+        "High Speed Accelerometer included 8 accelerometers multiplex together. Module was proven using FFT algothrims measured against known frequencies.",
+        "PCB design that included DAC, ADC, active filtering, super capacitor implementation, generation/syncing of multiple clocks, i2c, SPI, and UART communications.",
+        "Development of firmware and calibration jigs/processes for multiple modules.",
+        "As lead developer for Nanobeak, developed Python based tools to calibrate, analyze, and read 32 sensors.",
+        "Integrated mini spectrometer sensor to platform. Wrote Python code to perform calibration, capture 256 wavelengths and improve accuracy of device."
+      ]
+    },
+    {
+      "company": "U.S. ARMY",
+      "position": "Calibration Technician",
+      "website": "https://www.variableinc.com",
+      "startDate": "2013-08",
+      "endDate": "2019-09",
+      "summary": "Completed two deployments to Iraq",
+      "highlights": [
+        "Started the company"
+      ],
+      "actions": [
+        "Performed calibration by alignment and adjustment of electronic/mechanical components by comparing measurements to a known standard.",
+        "Diagnosed/repaired special purpose equipment down to the board level."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "UNIVERSITY OF TENNESSEE AT CHATTANOOGA",
+      "area": "B.S., Electrical Engineering",
+      "studyType": "Bachelor of Science",
+      "startDate": "2009-08",
+      "endDate": "2013-05",
+      "gpa": "3.18",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "MISSILE AND MUNITIONS SCHOOL, Redstone Arsenal, AL",
+      "area": "Developed equipment proficiency in oscilloscopes, multi-meters, counters, frequency generators, spectrum analyzers, pressure, temperature, mass and torque indicating test equipment.",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    },
+    {
+      "institution": "PALM BEACH COMMUNITY COLLEGE, Boca Raton, FL",
+      "area": "A.S., Arts",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "",
+      "gpa": "3.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Operating Systems",
+      "level": "Master",
+      "keywords": [
+        "Windows",
+        "Linux",
+        "OSX"
+      ]
+    },
+    {
+      "name": "Software",
+      "level": "Master",
+      "keywords": [
+        "Microsoft Office",
+        "Autodesk Eagle",
+        "Altium",
+        "PSPICE",
+        "C",
+        "GitHub/Bitbucket",
+        "Python (Flask, Numpy, Jupyter, Pandas, Scikit-learn, Bokeh, Bluetooth, JupyterLab)",
+        "SQL/SQLite"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "fluencySpoken": "Native speaker",
+      "fluencyWritten": "limited proficiency"
+    }
+  ]
+}
