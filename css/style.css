@@ -1051,6 +1051,52 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 #pbCloseBtn {
 	position:absolute !important;
 }
+
+/*----------------------------------------------------
+13.5 Languages
+------------------------------------------------------*/
+.language {
+	background:#ffffff;
+}
+.language .container {
+	padding-top:120px;
+	padding-bottom:120px;
+}
+.language h2 {
+	color:#5b4c5c;
+	margin-bottom:45px;
+}
+.language p {
+	color:#897f8a;
+	/*font-size:13px;*/
+	line-height:27px;
+}
+.language .heading p {
+	padding-bottom:54px;
+	max-width:660px;
+	text-align:center;
+	display:block;
+	margin:0 auto;
+	line-height:27px;
+}
+.language h4 {
+	font-weight:700;
+}
+.language .arrowpart {
+	margin-left:-26px;
+	margin-top:32px;
+	float:left;
+	width:22px;
+	height:22px;
+	background:url(../images/arrow-left.png) no-repeat 0 0 #ffffff;
+}
+.language .exCon {
+
+}
+.language .workDetails .rightArea {
+	border-left-color:#897f8a;
+}
+
 /*----------------------------------------------------
  14. Reffernces Style
 ------------------------------------------------------*/

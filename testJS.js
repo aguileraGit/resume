@@ -126,8 +126,7 @@ $.getJSON("resume.json", function(resumeRawData) {
       }
       //End education
 
-      //Start education
-
+      //Start skills
       if(key == "skills"){
         //Creat object with skill
         arraySkills = value;
@@ -140,6 +139,7 @@ $.getJSON("resume.json", function(resumeRawData) {
             '<div class="col-xs-12 skills"><span class="chart skilBg" data-percent=\"' + skill['level'] + '\"> <span class="percent"></span> </span>',
               '<h4>' + skill['name'] + '</h4>',
               '<p>' + skill['summary'] + '</p>',
+              '<p><small>' + skill['keywords'] + '</small></p>',
             '</div>'
           ].join('');
 
@@ -151,7 +151,6 @@ $.getJSON("resume.json", function(resumeRawData) {
 
         }
         //End individual skills
-
       }
       //End skills
 
