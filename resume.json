@@ -115,7 +115,7 @@
   "skills": [
     {
       "name": "Operating Systems",
-      "level": "80%",
+      "level": "80",
       "summary": "Have a great understanding of Linux, Windows, and OSX.",
       "keywords": [
         "Windows",
@@ -123,19 +123,34 @@
         "OSX"
       ]
     },
-
     {
-      "name": "Software",
-      "level": "Master",
+      "name": "PCB Software",
+      "level": "60",
+      "summary": "Started with Eagle. Moved to Altium at work.",
+      "keywords": [
+        "Altium",
+        "Autodesk Eagle",
+        "Pspice"
+      ]
+    },
+    {
+      "name": "Python",
+      "level": "40",
+      "summary" : "Love Python. ",
+      "keywords": ["Flask", "Numpy", "Jupyter", "Pandas", "Scikit-learn",
+      "Bokeh", "JupyterLab"
+      ]
+    },
+    {
+      "name": "Others",
+      "level": "50",
+      "summary": "Odds and Ends",
       "keywords": [
         "Microsoft Office",
-        "Autodesk Eagle",
-        "Altium",
-        "PSPICE",
-        "C",
+        "C/Arduino",
         "GitHub/Bitbucket",
-        "Python (Flask, Numpy, Jupyter, Pandas, Scikit-learn, Bokeh, Bluetooth, JupyterLab)",
-        "SQL/SQLite"
+        "SQLite",
+        "HTML/Javascript"
       ]
     }
   ],

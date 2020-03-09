@@ -123,9 +123,37 @@ $.getJSON("resume.json", function(resumeRawData) {
 
         }
         //Done looping though individual schools
-
       }
       //End education
+
+      //Start education
+
+      if(key == "skills"){
+        //Creat object with skill
+        arraySkills = value;
+
+        //Loop through individual skills
+        for (skill of arraySkills){
+
+          //Create temporary block of HTML
+          var html = [
+            '<div class="col-xs-12 skills"><span class="chart skilBg" data-percent=\"' + skill['level'] + '\"> <span class="percent"></span> </span>',
+              '<h4>' + skill['name'] + '</h4>',
+              '<p>' + skill['summary'] + '</p>',
+            '</div>'
+          ].join('');
+
+          //Create div, add classes, add html, and add to parent div
+          var div = document.createElement('div');
+          div.setAttribute('class', 'col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea');
+          div.innerHTML = html;
+          document.getElementById('skills').appendChild(div);
+
+        }
+        //End individual skills
+
+      }
+      //End skills
 
     }
     //End Keys
