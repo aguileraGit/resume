@@ -74,6 +74,7 @@ $.getJSON("resume.json", function(resumeRawData) {
                 '<div class="exCon">',
                   '<h4>' + job['company'] + '</h4>',
                   '<h5>' + job['position'] + '</h5>',
+                  '<h5><small>' + job['summary'] + '</small></h5>',
                   '<div id="jobActions">',
                   actionList,
                   '</div>',
