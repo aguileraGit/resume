@@ -614,10 +614,11 @@ header {
 	font-size:15px;
 	line-height:26px;
 	text-align:center;
+	padding-bottom: 5px;
 }
 .technical .skills p:last-child{
 	margin-bottom:0;
-	padding-bottom:0;
+	padding-bottom:25px;
 }
 .technical .skills img {
 	margin:0 auto;
@@ -628,9 +629,9 @@ header {
 .technical .skills h4 {
 	font-weight:700;
 	text-transform:uppercase;
-	font-size:17px;
-	line-height:27px;
-	padding-bottom:11px;
+	font-size:19px;
+	/*line-height:27px;*/
+	padding-bottom:2px;
 	color:#5b4c5c;
 }
 .skilBg {
@@ -641,7 +642,7 @@ header {
 	display: inline-block;
 	width: 118px;
 	height: 118px;
-	margin-bottom: 19px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 .chart canvas {
@@ -1055,46 +1056,69 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 /*----------------------------------------------------
 13.5 Languages
 ------------------------------------------------------*/
+.addspace {
+	height:60px;
+	background:#eeeeee;
+}
 .language {
-	background:#ffffff;
+	background:#eeeeee;
+	color:#474d5d;
 }
 .language .container {
-	padding-top:120px;
-	padding-bottom:120px;
-}
-.language h2 {
-	color:#5b4c5c;
-	margin-bottom:45px;
-}
-.language p {
-	color:#897f8a;
-	/*font-size:13px;*/
-	line-height:27px;
+	padding-top:117px;
+	padding-bottom:100px;
 }
 .language .heading p {
-	padding-bottom:54px;
+	padding-bottom:41px;
 	max-width:660px;
 	text-align:center;
 	display:block;
 	margin:0 auto;
-	line-height:27px;
 }
-.language h4 {
-	font-weight:700;
-}
-.language .arrowpart {
-	margin-left:-26px;
-	margin-top:32px;
-	float:left;
-	width:22px;
-	height:22px;
-	background:url(../images/arrow-left.png) no-repeat 0 0 #ffffff;
-}
-.language .exCon {
+.language p {
+	color:#897f8a;
 
 }
-.language .workDetails .rightArea {
-	border-left-color:#897f8a;
+.language h2 {
+	color:#5b4c5c;
+	margin-bottom:49px;
+}
+.language .skillzArea {
+	padding:0px;
+}
+.language .skillz {
+	margin:0 auto;
+	margin-bottom:23px;
+	text-align:center;
+	padding:0px;
+	float:none;
+}
+.language .skillz p {
+	color:#897f8a;
+	font-size:15px;
+	line-height:26px;
+	text-align:center;
+}
+.language .skillz p:last-child{
+	margin-bottom:0;
+	padding-bottom:0;
+}
+.language .skillz img {
+	margin:0 auto;
+	margin-bottom:33px;
+	width:100%;
+	max-width:152px;
+}
+.language .skillz h4 {
+	font-weight:700;
+	text-transform:uppercase;
+	font-size:17px;
+	line-height:27px;
+	padding-bottom:11px;
+	color:#5b4c5c;
+}
+.skilBg {
+	/*background:url(../images/skills.png) no-repeat 0 0;*/
 }
 
 /*----------------------------------------------------
@@ -1237,6 +1261,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	font-style:normal;
 	border:#cdc9ce 1px solid;
 	font-size:15px;
+	border-radius: 15px;
 }
 .conForm input.noMarr {
 	margin-right:0px;
@@ -1252,6 +1277,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	resize:none;
 	font-size:15px;
 	border:#cdc9ce 1px solid;
+	border-radius: 25px;
 }
 .conForm .submitBnt {
 	background:#ffffff;
@@ -1270,6 +1296,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 	text-transform:uppercase;
 	transition-duration: 0.2s;
 	-webkit-transition-duration: 0.2s;
+	border-radius: 15px;
 }
 .conForm .submitBnt:hover {
 	background:#5b4c5c;

@@ -5,7 +5,7 @@
     "picture": "",
     "email": "diegoa@aguilera.me",
     "phone": "931-624-5808",
-    "website": "http://aguilera.me",
+    "website": "http://resume.aguilera.me",
     "summary": "Diego Aguilera Resume - Need to add more about me here! Ugh Words.",
     "location": {
       "address": "1462 Elm St",
@@ -116,41 +116,42 @@
     {
       "name": "Operating Systems",
       "level": "80",
-      "summary": "Have a great understanding of Linux, Windows, and OSX.",
+      "summary": "Have a great understanding of Windows and OSX. Have a great passion for Linux.",
       "keywords": [
         "Windows",
-        "Linux",
-        "OSX"
+        " Linux",
+        " OSX"
       ]
     },
     {
       "name": "PCB Software",
       "level": "60",
-      "summary": "Started with Eagle. Moved to Altium at work.",
+      "summary": "Started with Eagle. Still used it for home projects. Using Altium at work.",
       "keywords": [
-        "Altium",
-        "Autodesk Eagle",
-        "Pspice"
+        " Altium",
+        " Autodesk Eagle",
+        " Pspice"
       ]
     },
     {
       "name": "Python",
       "level": "40",
-      "summary" : "Love Python. ",
-      "keywords": ["Flask", "Numpy", "Jupyter", "Pandas", "Scikit-learn",
-      "Bokeh", "JupyterLab"
+      "summary" : "Love Python. It's simple, quick, and consise.",
+      "keywords": ["Flask", " Numpy", " Jupyter", " Pandas", " Scikit-learn",
+      " Bokeh", " JupyterLab", " Regex"
       ]
     },
     {
-      "name": "Others",
+      "name": "Everything Else",
       "level": "50",
-      "summary": "Odds and Ends",
+      "summary": "Other software, libraries, tools that help day to day.",
       "keywords": [
         "Microsoft Office",
-        "C/Arduino",
-        "GitHub/Bitbucket",
-        "SQLite",
-        "HTML/Javascript"
+        " C/Arduino",
+        " GitHub",
+        " SQLite",
+        " HTML/Javascript,",
+        " JSON"
       ]
     }
   ],

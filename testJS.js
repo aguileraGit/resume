@@ -2,13 +2,12 @@
 console.log('Loaded');
 
 $.getJSON("resume.json", function(resumeRawData) {
-    console.log(resumeRawData); // this will show the info it in firebug console
 
     objResume = resumeRawData;
 
     //Keys: basics/work/education/skills/languages
     for (let [key, value] of Object.entries(objResume)) {
-      console.log(`${key}: ${value}`);
+      //console.log(`${key}: ${value}`);
 
       //Start aboutme & contacts
       if(key == "basics"){
@@ -136,23 +135,39 @@ $.getJSON("resume.json", function(resumeRawData) {
 
           //Create temporary block of HTML
           var html = [
-            '<div class="col-xs-12 skills"><span class="chart skilBg" data-percent=\"' + skill['level'] + '\"> <span class="percent"></span> </span>',
+            '<div class="col-xs-12 skills">',
+              '<span class="chart skilBg" data-percent=\"' + skill['level'] + '\"> <span class="percent"></span> </span>',
               '<h4>' + skill['name'] + '</h4>',
-              '<p>' + skill['summary'] + '</p>',
               '<p><small>' + skill['keywords'] + '</small></p>',
+              '<p>' + skill['summary'] + '</p>',
             '</div>'
           ].join('');
 
           //Create div, add classes, add html, and add to parent div
           var div = document.createElement('div');
-          div.setAttribute('class', 'col-xs-12 col-sm-4 col-md-4 col-lg-4 skillsArea');
+          div.setAttribute('class', 'col-xs-12 col-sm-4 col-md-4 col-lg-6 skillsArea');
           div.innerHTML = html;
-          document.getElementById('skills').appendChild(div);
+          document.getElementById('jobSkills').appendChild(div);
 
         }
         //End individual skills
       }
       //End skills
+
+      //Start aboutme & contacts
+      if(key == "languages"){
+
+        //Create object with basics
+        objBasics = value[0];
+
+        console.log(objBasics)
+
+        //Update Name
+        document.getElementById("langaugeSpoken").innerHTML = objBasics['fluencySpoken'];
+
+        //Update written
+        document.getElementById("languageWritten").innerHTML = objBasics['fluencyWritten'];
+      }
 
     }
     //End Keys
