@@ -1384,7 +1384,13 @@ ul.portfolioContainer li:hover span.hoverBox .linKed {
 /*---------------------------------------------------------------------------------
  13. Responsive style
 -------------------------------------------------------------------------------*/
-
+/* https://stackoverflow.com/questions/19827605/change-bootstrap-navbar-collapse-breakpoint-without-using-less
+@media (min-width: 1200px) {
+   .collapse {
+       display: none !important;
+   }
+}
+*/
 @media screen and (min-width: 1200px) {
  .workYear {
  /*width:140px;
