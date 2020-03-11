@@ -65,11 +65,11 @@ $.getJSON("resume.json", function(resumeRawData) {
 
           //Create temporary block of HTML
           var html = [
-              '<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">',
+              '<div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">',
                 '<div class="workYear"><span class="prevY">' + job['endDate'] + '</span>',
                   '<span class="afterY">' + job['startDate'] + '</span></div>',
               '</div>',
-              '<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">',
+              '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-10 rightArea">',
                 '<div class="arrowpart"></div>',
                 '<div class="exCon">',
                   '<h4>' + job['company'] + '</h4>',
