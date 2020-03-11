@@ -146,7 +146,7 @@ $.getJSON("resume.json", function(resumeRawData) {
 
           //Create div, add classes, add html, and add to parent div
           var div = document.createElement('div');
-          div.setAttribute('class', 'col-xs-12 col-sm-6 col-md-6 col-lg-6 skillsArea');
+          div.setAttribute('class', 'col-xs-12 col-sm-12 col-md-6 col-lg-6 skillsArea');
           div.innerHTML = html;
           document.getElementById('jobSkills').appendChild(div);
 
