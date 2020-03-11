@@ -32,15 +32,15 @@ $.getJSON("resume.json", function(resumeRawData) {
         document.getElementById("contactAddress").innerHTML = varAddress;
 
         //Update contact phone number
-        document.getElementById("contactPhone").innerHTML = objBasics['phone'];
+        document.getElementById("contactPhone").innerHTML = " " + objBasics['phone'];
 
         //Update contact email
-        varEmail = "<a href=\"mailto:" + objBasics['email'] + "\">" +
+        varEmail = " " + "<a href=\"mailto:" + objBasics['email'] + "\">" +
               objBasics['email'] + "</a>"
         document.getElementById("contactEmail").innerHTML = varEmail;
 
         //Update contact website
-        varWebsite = "<a href=\"" + objBasics['website'] + "\">" +
+        varWebsite = " " + "<a href=\"" + objBasics['website'] + "\">" +
               objBasics['website'] + "</a>"
         document.getElementById("contactWebsite").innerHTML = varWebsite;
       }
@@ -139,14 +139,14 @@ $.getJSON("resume.json", function(resumeRawData) {
             '<div class="col-xs-12 skills">',
               '<span class="chart skilBg" data-percent=\"' + skill['level'] + '\"> <span class="percent"></span> </span>',
               '<h4>' + skill['name'] + '</h4>',
-              '<p><small>' + skill['keywords'] + '</small></p>',
+              '<p><small><i>' + skill['keywords'] + '</i></small></p>',
               '<p>' + skill['summary'] + '</p>',
             '</div>'
           ].join('');
 
           //Create div, add classes, add html, and add to parent div
           var div = document.createElement('div');
-          div.setAttribute('class', 'col-xs-12 col-sm-4 col-md-4 col-lg-6 skillsArea');
+          div.setAttribute('class', 'col-xs-12 col-sm-6 col-md-6 col-lg-6 skillsArea');
           div.innerHTML = html;
           document.getElementById('jobSkills').appendChild(div);
 

@@ -6,7 +6,7 @@
     "email": "diegoa@aguilera.me",
     "phone": "931-624-5808",
     "website": "http://resume.aguilera.me",
-    "summary": "Diego Aguilera Resume - Need to add more about me here! Ugh Words. Something about Family. Photos. Goals: Machine Learning. Further develope Python skills. Refer to Github projects.",
+    "summary": "Diego Aguilera Resume - Need to add more about me here! Ugh Words. Something about Family. Photos. Goals: Machine Learning. Further develope Python skills. Refer to Github projects. Section on projects? 3D modeling. Daily routine.",
     "location": {
       "address": "1462 Elm St",
       "postalCode": "37415",
@@ -137,7 +137,7 @@
       "name": "Python",
       "level": "40",
       "summary" : "Love Python. It's simple, quick, and consise.",
-      "keywords": ["Flask", " Numpy", " Jupyter", " Pandas", " Scikit-learn",
+      "keywords": ["Flask", " Numpy", " Pandas", " Scikit",
       " Bokeh", " JupyterLab", " Regex"
       ]
     },
