@@ -1,16 +1,32 @@
 To Do...
 
-1. Update all the typical stuff
-2. Update map
-3. Remove contact form
-4. Update icons on footer
-5. Decide on reference
-6. Add in language - https://themes.themearabia.net/html/basma-resume-html/ltr/index.html#resume
-7. Add photos
-8. Add drop downs for resume work and
-9. Look at Navbar. I thought it stayed on top
-10. Add Google Tracking
+# Workload (radar map)
+ - Show distribute work load per job
+ - https://www.chartjs.org/docs/latest/charts/radar.html
 
+
+# Generate PDF
+ - Remove Icon/Photos/Footer
+ - https://pypi.org/project/pdfkit/
+
+# Navbar
+ - Doesn't stay at top
+ - Want it to go to collapse mode at larger screen size
+
+# Add Google Tracking
+
+# Deal with references
+ - Jeff
+ - George
+ - Petey
+ - Greg
+
+Footer Icon: Update Instagram Links
+
+Work in ML and data visualization
+
+Talk about JSON back end
+
+# Links
 https://jsonresume.org/projects/
-
-Contact form looked better before. 
+https://jsonformatter.org/json-viewer

@@ -205,7 +205,11 @@ header {
 	text-decoration:none;
 	}
 .bannerText h1 {
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
+	font-family: 'Contrail One', cursive;
+	font-size: 72px;
+	padding-bottom:20px;
+
 }
 .bannerText h2 {
 	font-size:34px;

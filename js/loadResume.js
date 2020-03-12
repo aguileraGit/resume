@@ -163,7 +163,10 @@ $.getJSON("resume.json", function(resumeRawData) {
 
         console.log(objBasics)
 
-        //Update Name
+        //Update Spanish
+        //document.getElementById("languageSpanish").innerHTML = objBasics['language'];
+
+        //Update spoken
         document.getElementById("langaugeSpoken").innerHTML = objBasics['fluencySpoken'];
 
         //Update written
