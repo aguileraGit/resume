@@ -28,22 +28,33 @@ $.getJSON("resume.json", function(resumeRawData) {
         varAddress = " " + objBasics["location"]['address'] + ", " +
                      objBasics["location"]['city'] +  ", " +
                      objBasics["location"]['region'];
+
         //Update contact address
-        document.getElementById("contactAddress").innerHTML = varAddress;
+        try{
+          document.getElementById("contactAddress").innerHTML = varAddress;
+        } catch{console.log("contactAddress doesn't exist")}
+
 
         //Update contact phone number
-        document.getElementById("contactPhone").innerHTML = " " + objBasics['phone'];
+        try{
+          document.getElementById("contactPhone").innerHTML = " " + objBasics['phone'];
+        } catch{console.log("contactPhone doesn't exist")}
 
         //Update contact email
-        varEmail = " " + "<a href=\"mailto:" + objBasics['email'] + "\">" +
-              objBasics['email'] + "</a>"
-        document.getElementById("contactEmail").innerHTML = varEmail;
+        try{
+          varEmail = " " + "<a href=\"mailto:" + objBasics['email'] + "\">" +
+                objBasics['email'] + "</a>"
+          document.getElementById("contactEmail").innerHTML = varEmail;
+        } catch{console.log("contactEmail doesn't exist")}
 
         //Update contact website
-        varWebsite = " " + "<a href=\"" + objBasics['website'] + "\">" +
-              objBasics['website'] + "</a>"
-        document.getElementById("contactWebsite").innerHTML = varWebsite;
+        try{
+          varWebsite = " " + "<a href=\"" + objBasics['website'] + "\">" +
+                objBasics['website'] + "</a>"
+          document.getElementById("contactWebsite").innerHTML = varWebsite;
+        } catch{console.log("contactWebsite doesn't exist")}
       }
+
       //End aboutme & contacts
 
       //Start work experience
@@ -175,4 +186,6 @@ $.getJSON("resume.json", function(resumeRawData) {
 
     }
     //End Keys
+
+
 });
