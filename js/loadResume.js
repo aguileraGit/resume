@@ -1,4 +1,5 @@
 
+
 console.log('Loaded');
 
 $.getJSON("resume.json", function(resumeRawData) {
@@ -6,53 +7,57 @@ $.getJSON("resume.json", function(resumeRawData) {
     objResume = resumeRawData;
 
     //Keys: basics/work/education/skills/languages
-    for (let [key, value] of Object.entries(objResume)) {
+    //for (let [key, value] of Object.entries(objResume)) {
+    for (var key in objResume){
       //console.log(`${key}: ${value}`);
 
       //Start aboutme & contacts
       if(key == "basics"){
 
+        //console.log(key["basics"].values())
+
         //Create object with basics
-        objBasics = value;
+        objBasics = objResume.basics;
 
         //Update Name
-        document.getElementById("aboutmeName").innerHTML = objBasics['name'];
+        document.getElementById("aboutmeName").innerHTML = objBasics.name;
 
         //Update sublabel
-        document.getElementById("aboutmeSubHeading").innerHTML = objBasics['label'];
+        document.getElementById("aboutmeSubHeading").innerHTML = objBasics.label;
 
         //Update description
-        document.getElementById("aboutmeDescription").innerHTML = objBasics['summary'];
+        document.getElementById("aboutmeDescription").innerHTML = objBasics.summary;
 
         //Format contact address
-        varAddress = " " + objBasics["location"]['address'] + ", " +
-                     objBasics["location"]['city'] +  ", " +
-                     objBasics["location"]['region'];
+        varAddress = " " + objBasics.location.address + ", " +
+                     objBasics.location.city +  ", " +
+                     objBasics.location.region;
 
         //Update contact address
-        try{
+        if (document.getElementById('contactAddress') != null) {
           document.getElementById("contactAddress").innerHTML = varAddress;
-        } catch{console.log("contactAddress doesn't exist")}
+        }
 
 
         //Update contact phone number
-        try{
-          document.getElementById("contactPhone").innerHTML = " " + objBasics['phone'];
-        } catch{console.log("contactPhone doesn't exist")}
+        if (document.getElementById("contactPhone") != null) {
+          document.getElementById("contactPhone").innerHTML = " " + objBasics.phone;
+        }
 
         //Update contact email
-        try{
-          varEmail = " " + "<a href=\"mailto:" + objBasics['email'] + "\">" +
-                objBasics['email'] + "</a>"
-          document.getElementById("contactEmail").innerHTML = varEmail;
-        } catch{console.log("contactEmail doesn't exist")}
+          varEmail = " " + "<a href=\"mailto:" + objBasics.email + "\">" +
+                objBasics.email + "</a>";
+
+          if (document.getElementById("contactEmail") != null) {
+            document.getElementById("contactEmail").innerHTML = varEmail;
+          }
 
         //Update contact website
-        try{
-          varWebsite = " " + "<a href=\"" + objBasics['website'] + "\">" +
-                objBasics['website'] + "</a>"
+          varWebsite = " " + "<a href=\"" + objBasics.website + "\">" +
+                objBasics.website + "</a>";
+          if (document.getElementById("contactWebsite") != null) {
           document.getElementById("contactWebsite").innerHTML = varWebsite;
-        } catch{console.log("contactWebsite doesn't exist")}
+        }
       }
 
       //End aboutme & contacts
@@ -60,32 +65,32 @@ $.getJSON("resume.json", function(resumeRawData) {
       //Start work experience
       if(key == "work"){
         //Create object with work
-        arrayWork = value;
+        arrayWork = objResume.work;
 
         //Loop through individual jobs
-        for (job of arrayWork){
+        for (var job of arrayWork){
 
           //Get actions and store to display in HTML below
           var actionList = ['<ul>'];
 
           //Add lists from json to li element
-          for (action of job['actions']){
-            actionList.push( '<li>' + action + '</li>' )
+          for (var action of job.actions){
+            actionList.push( '<li>' + action + '</li>' );
           }
-          actionList.push('</ul>')
+          actionList.push('</ul>');
 
           //Create temporary block of HTML
           var html = [
               '<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">',
-                '<div class="workYear"><span class="prevY">' + job['endDate'] + '</span>',
-                  '<span class="afterY">' + job['startDate'] + '</span></div>',
+                '<div class="workYear"><span class="prevY">' + job.endDate + '</span>',
+                  '<span class="afterY">' + job.startDate + '</span></div>',
               '</div>',
               '<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">',
                 '<div class="arrowpart"></div>',
                 '<div class="exCon">',
-                  '<h4>' + job['company'] + '</h4>',
-                  '<h5>' + job['position'] + '</h5>',
-                  '<h5><small>' + job['summary'] + '</small></h5>',
+                  '<h4>' + job.company + '</h4>',
+                  '<h5>' + job.position + '</h5>',
+                  '<h5><small>' + job.summary + '</small></h5>',
                   '<div id="jobActions">',
                   actionList,
                   '</div>',
@@ -106,31 +111,31 @@ $.getJSON("resume.json", function(resumeRawData) {
       //Start education
       if(key == "education"){
         //Creat object with work
-        arrayEdu = value;
+        arrayEdu = objResume.education;
 
         //Loop through individual schools
-        for (edu of arrayEdu){
+        for (var edu of arrayEdu){
 
           //Create temporary block of HTML
-          var html = [
+          var html2 = [
             '<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">',
-              '<div class="workYear"><span class="afterY">' + edu['endDate'] + '</span></div>',
+              '<div class="workYear"><span class="afterY">' + edu.endDate + '</span></div>',
             '</div>',
             '<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">',
               '<div class="arrowpart"></div>',
               '<div class="exCon">',
-                '<h4>' + edu['area'] + '</h4>',
-                '<h5>' + edu['institution'] + '</h5>',
-                '<p>' + edu['studyType'] + '</p>',
+                '<h4>' + edu.area + '</h4>',
+                '<h5>' + edu.institution + '</h5>',
+                '<p>' + edu.studyType + '</p>',
               '</div>',
             '</div>'
           ].join('');
 
           //Create div, add classes, add html, and add to parent div
-          var div = document.createElement('div');
-          div.setAttribute('class', 'row workDetails');
-          div.innerHTML = html;
-          document.getElementById('educationSchools').appendChild(div);
+          var div2 = document.createElement('div');
+          div2.setAttribute('class', 'row workDetails');
+          div2.innerHTML = html2;
+          document.getElementById('educationSchools').appendChild(div2);
 
         }
         //Done looping though individual schools
@@ -140,26 +145,26 @@ $.getJSON("resume.json", function(resumeRawData) {
       //Start skills
       if(key == "skills"){
         //Creat object with skill
-        arraySkills = value;
+        arraySkills = objResume.skills;
 
         //Loop through individual skills
-        for (skill of arraySkills){
+        for (var skill of arraySkills){
 
           //Create temporary block of HTML
-          var html = [
+          var html3 = [
             '<div class="col-xs-12 skills">',
-              '<span class="chart skilBg" data-percent=\"' + skill['level'] + '\"> <span class="percent"></span> </span>',
-              '<h4>' + skill['name'] + '</h4>',
-              '<p><small><i>' + skill['keywords'] + '</i></small></p>',
-              '<p>' + skill['summary'] + '</p>',
+              '<span class="chart skilBg" data-percent=\"' + skill.level + '\"> <span class="percent"></span> </span>',
+              '<h4>' + skill.name + '</h4>',
+              '<p><small><i>' + skill.keywords + '</i></small></p>',
+              '<p>' + skill.summary + '</p>',
             '</div>'
           ].join('');
 
           //Create div, add classes, add html, and add to parent div
-          var div = document.createElement('div');
-          div.setAttribute('class', 'col-xs-12 col-sm-12 col-md-6 col-lg-6 skillsArea');
-          div.innerHTML = html;
-          document.getElementById('jobSkills').appendChild(div);
+          var div3 = document.createElement('div');
+          div3.setAttribute('class', 'col-xs-12 col-sm-12 col-md-6 col-lg-6 skillsArea');
+          div3.innerHTML = html3;
+          document.getElementById('jobSkills').appendChild(div3);
 
         }
         //End individual skills
@@ -170,18 +175,18 @@ $.getJSON("resume.json", function(resumeRawData) {
       if(key == "languages"){
 
         //Create object with basics
-        objBasics = value[0];
+        objBasics = objResume.languages[0];
 
-        console.log(objBasics)
+        //console.log(objBasics)
 
         //Update Spanish
         //document.getElementById("languageSpanish").innerHTML = objBasics['language'];
 
         //Update spoken
-        document.getElementById("langaugeSpoken").innerHTML = objBasics['fluencySpoken'];
+        document.getElementById("langaugeSpoken").innerHTML = objBasics.fluencySpoken;
 
         //Update written
-        document.getElementById("languageWritten").innerHTML = objBasics['fluencyWritten'];
+        document.getElementById("languageWritten").innerHTML = objBasics.fluencyWritten;
       }
 
     }
