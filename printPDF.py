@@ -33,7 +33,7 @@ except OSError:
 
 # Create a list of ids to remove
 #idsToRemove = ['aboutmeID', 'technicalID',
-idsToRemove = ['banner', 'navMenu', 'bntDownloadID', 'footerMapArea', 'jobSkills']
+idsToRemove = ['banner', 'navMenu', 'bntDownloadID', 'footerMapArea', 'jobSkills', 'reffernces']
 classToRemove = ['contact', 'footer', 'contactDetailsID', 'technical', 'reffernces']
 
 #Define local file to open
@@ -75,7 +75,6 @@ options = {
     'enable-local-file-access' : None,
     'debug-javascript' : None,
     'no-collate' : None,
-    'enable-external-links' : None
 }
 config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
 
