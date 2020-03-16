@@ -33,8 +33,8 @@ except OSError:
 
 # Create a list of ids to remove
 #idsToRemove = ['aboutmeID', 'technicalID',
-idsToRemove = ['banner', 'navMenu', 'bntDownloadID', 'footerMapArea']
-classToRemove = ['contact', 'footer', 'contactDetailsID']
+idsToRemove = ['banner', 'navMenu', 'bntDownloadID', 'footerMapArea', 'jobSkills']
+classToRemove = ['contact', 'footer', 'contactDetailsID', 'technical', 'reffernces']
 
 #Define local file to open
 link = open('index.html')
@@ -65,7 +65,7 @@ output = soup.prettify()
 with open(newHtmlFile, 'a') as results_file:
     results_file.write(output)
 
-print('Done writing')
+print('Done writing new HTML file')
 
 time.sleep(1)
 
@@ -81,3 +81,5 @@ config = pdfkit.configuration(wkhtmltopdf=WKHTMLTOPDF_PATH)
 
 #Create PDF
 pdfkit.from_file(newHtmlFile, newPDFFile, options=options, configuration=config)
+
+print('Done creating PDF')
